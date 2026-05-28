@@ -31,7 +31,7 @@ class BinanceClient:
     }
 
     def __init__(self):
-        self.exchange = ccxt.binance({
+        self.exchange = ccxt.bybit({
             "apiKey": exchange_config.binance_api_key,
             "secret": exchange_config.binance_api_secret,
             "enableRateLimit": True,
